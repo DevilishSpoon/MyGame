@@ -29,3 +29,17 @@ Class Player:
   Attack
   Player Menu
 ```
+
+Main menu
+```
+Main()
+  while choice not quit
+    print menu
+    get menu choice
+    if menu choice in choices
+      print invalid option
+    else if
+      print for option
+    else
+      you broke something
+```
