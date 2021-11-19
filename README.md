@@ -17,7 +17,7 @@ Just kidding you don't have to because you are.
 ___
 ## Notes
 
-Pseudo code for stuff that I haven't started yet, or I might have started it. Not entirely sure
+Pseudo code for stuff that I haven't started yet, or I might have started it. Not entirely sure.
 
 Player Class
 ```
