@@ -3,7 +3,7 @@ import time
 from os import system, name
 
 MENU = """
-\t\tSHITTER GAME
+\t\tHappy GAME
 _______________________________________
 1 - View Level
 2 - Level Up
@@ -17,7 +17,7 @@ def clearscreen():
     else: _ = system("clear")
 
 
-def main(shitter):
+def main(Happy):
     menu_choice = None
     while menu_choice != ("0"):
         clearscreen()
@@ -25,13 +25,13 @@ def main(shitter):
         menu_choice = input("Agrababuptis")
         if menu_choice in ("1","2","3"):
             if menu_choice == "1":
-                print(shitter.view_level())
+                print(Happy.view_level())
                 time.sleep(5)
             elif menu_choice == "2":
-                print(shitter.level_up())
+                print(Happy.level_up())
                 time.sleep(2)
             elif menu_choice == "14":
-                shitter = player("What's your name?")
+                Happy = player("What's your name?")
 
 class player:
     def __init__(self, player_name):
@@ -92,5 +92,5 @@ class player:
     def display_gold(self):
         return f"""___________________________\n\tGold: {self.gold}\n___________________________"""
 
-shitter = player(input("What's your name?"))
-main(shitter)
+Happy = player(input("What's your name?"))
+main(Happy)
